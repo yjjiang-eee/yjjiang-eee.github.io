@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Prof. Your Name's Homepage</title>
+    <title>Dr. Yajie Jiang (蒋亚杰) - Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Dr. Yajie Jiang (蒋亚杰), Associate Professor/Associate Researcher at Institute of Electrical Engineering, Chinese Academy of Sciences (IEE-CAS). Research on intelligent electric drives, DC/AC microgrids, lithium-ion batteries, and AI for power electronics.">
     <style>
-        /* 基本排版 */
         body {
             margin: 0;
             padding: 0;
             font-family: "Times New Roman", Georgia, serif;
             background-color: #ffffff;
             color: #222222;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         a {
@@ -23,15 +24,13 @@
             text-decoration: underline;
         }
 
-        /* 页面整体布局：左侧导航 + 右侧内容 */
         .page-wrapper {
             display: flex;
             min-height: 100vh;
         }
 
-        /* 左侧导航栏 */
         .sidebar {
-            width: 190px;
+            width: 200px;
             padding: 20px 15px;
             border-right: 1px solid #cccccc;
             background-color: #f7f7f7;
@@ -58,14 +57,12 @@
             font-size: 15px;
         }
 
-        /* 右侧内容区域 */
         .content {
             flex: 1;
             padding: 25px 40px 40px 40px;
             box-sizing: border-box;
         }
 
-        /* 顶部标题 */
         .main-heading {
             font-size: 32px;
             font-weight: bold;
@@ -74,14 +71,12 @@
             padding-bottom: 5px;
         }
 
-        /* Section 标题 */
         h2.section-title {
             font-size: 22px;
             margin-top: 25px;
             margin-bottom: 10px;
         }
 
-        /* 欢迎区：照片 + 基本信息 */
         .welcome-container {
             display: flex;
             flex-wrap: wrap;
@@ -107,20 +102,50 @@
 
         .basic-info {
             flex: 1;
-            min-width: 250px;
+            min-width: 260px;
         }
 
         .basic-info ul {
             margin-top: 0;
         }
 
-        /* 正文段落 */
         .paragraph-block {
-            max-width: 980px;
+            max-width: 1100px;
             text-align: justify;
         }
 
-        /* 小屏幕适配 */
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .two-column > div {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        .pub-list li {
+            margin-bottom: 4px;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #555555;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 13px;
+            color: #666666;
+            border-top: 1px solid #dddddd;
+            padding-top: 10px;
+        }
+
         @media (max-width: 800px) {
             .page-wrapper {
                 flex-direction: column;
@@ -147,125 +172,261 @@
 
 <div class="page-wrapper">
 
-    <!-- 左侧导航 -->
+    <!-- Sidebar navigation -->
     <aside class="sidebar">
         <div class="sidebar-title">Menu</div>
         <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Home / 首页</a></li>
             <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#publications">Publications</a></li>
-            <li><a href="#services">Professional Service</a></li>
-            <li><a href="#group">Research Group</a></li>
-            <li><a href="#photos">Photos</a></li>
+            <li><a href="#honors">Honors</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </aside>
 
-    <!-- 右侧内容 -->
+    <!-- Main content -->
     <main class="content">
-        <!-- 首页 / Welcome -->
+
+        <!-- Home / Welcome -->
         <section id="home">
-            <div class="main-heading">Your Name's Homepage</div>
+            <div class="main-heading">Yajie Jiang (蒋亚杰)'s Homepage</div>
 
             <h2 class="section-title">Welcome</h2>
 
             <div class="welcome-container">
-                <!-- 照片：请将 photo.jpg 换成你的照片文件名 -->
                 <div class="profile-photo">
-                    <img src="photo.jpg" alt="Profile Photo">
+                    <!-- 请将 yajie_jiang.jpg 换成你的真实照片文件名 -->
+                    <img src="yajie_jiang.jpg" alt="Yajie Jiang">
                 </div>
 
-                <!-- 右侧基本信息：把下面内容改成你自己的 -->
                 <div class="basic-info">
                     <ul>
-                        <li><strong>Prof. Your Name (中文名, 职称, 博导)</strong></li>
-                        <li>School / Department, Your University, City, Country.</li>
-                        <li>Office: Room XXX, Building XX, Street, City ZIP, Country.</li>
-                        <li>Telephone: +XX-XXX-XXXXXXX</li>
-                        <li>Email: youremail@university.edu</li>
+                        <li><strong>Dr. Yajie Jiang (蒋亚杰)</strong></li>
+                        <li>Associate Researcher (副研究员, BR-B Talent)</li>
+                        <li>Institute of Electrical Engineering, Chinese Academy of Sciences (IEE-CAS)</li>
+                        <li>Address: No. 6, North Second Alley of Zhongguancun, Haidian District, Beijing, China</li>
+                        <li>Phone: +86-177 7149 1684</li>
+                        <li>Email: <a href="mailto:yjjiang@mail.iee.ac.cn">yjjiang@mail.iee.ac.cn</a></li>
+                        <li>Google Scholar:
+                            <a href="https://scholar.google.com/citations?user=HOUkN4gAAAAJ" target="_blank">
+                                HOUkN4gAAAAJ
+                            </a>
+                        </li>
+                        <li>IEEE Member; Senior Member of CEC; Member of CSEE</li>
                     </ul>
                 </div>
             </div>
 
-            <h2 class="section-title">Personal Information</h2>
+            <h2 class="section-title">Short Bio</h2>
             <div class="paragraph-block">
                 <p>
-                    Dr. Your Name is now a Professor at the Department of XXXX, Your University, City, Country.
-                    He/She received the Ph.D. degree from XXXXX University in 20XX. From 20XX to 20XX, he/she
-                    worked as a Postdoctoral Researcher at YYYYY University, Country. He/She has published more
-                    than XXX refereed papers in international journals and conferences, including IEEE Transactions,
-                    IET journals, and other high-impact venues.
+                    Dr. Yajie Jiang (蒋亚杰) is an Associate Researcher (BR-B Talent) at the Institute of Electrical
+                    Engineering, Chinese Academy of Sciences (IEE-CAS), Beijing, China. He received the B.Eng. degree
+                    in Electrical Engineering from Zhengzhou University in 2015, the M.Eng. degree from Huazhong
+                    University of Science and Technology in 2018, and the Ph.D. degree in Electrical Engineering from
+                    The University of Hong Kong in 2022 (full scholarship). From 2022 to 2023, he was a Distinguished
+                    Postdoctoral Fellow at The Hong Kong Polytechnic University. From 2023 to 2025, he was a
+                    Postdoctoral Research Fellow at Nanyang Technological University, Singapore. His research focuses
+                    on intelligent electric drives, networked DC/AC microgrids, lithium-ion batteries and solid-state
+                    batteries, and AI-empowered modeling, control and state monitoring for power electronics and motor
+                    drives.
                 </p>
                 <p>
-                    His/Her current research interests include intelligent electric drives, power electronics and
-                    energy storage systems, cyber-physical systems, artificial intelligence for control and
-                    optimization, and their applications in electric vehicles, microgrids, and advanced manufacturing.
-                    He/She serves as an Associate Editor or Editorial Board Member for several international journals.
+                    Dr. Jiang has published more than 20 first-/corresponding-author SCI journal papers, including
+                    IEEE Transactions on Industrial Electronics, IEEE Transactions on Power Electronics, IEEE
+                    Transactions on Smart Grid, and IEEE Transactions on Industry Applications. One paper has been
+                    selected as an ESI Highly Cited Paper. He is a member of IEEE, Senior Member of the China
+                    Electrotechnical Society, and serves as Deputy Secretary-General of the Technical Committee on
+                    Artificial Intelligence and Electrical Applications. He is also Guest Editor of several SCI journals
+                    and active reviewer for many IEEE Transactions and international conferences.
                 </p>
             </div>
         </section>
 
         <!-- Research -->
         <section id="research">
-            <h2 class="section-title">Research</h2>
+            <h2 class="section-title">Research Interests / 研究方向</h2>
             <div class="paragraph-block">
-                <p>
-                    <!-- 在这里写你的研究方向简介，可以用列表或小标题分块 -->
-                    • Intelligent control of electric drives and power electronic converters.<br>
-                    • AI-assisted modeling, diagnosis, and optimization for energy systems.<br>
-                    • Linear motors, high-speed machines, and advanced propulsion systems.<br>
-                    • Microgrids, energy management, and multi-source energy storage systems.
-                </p>
+                <ul>
+                    <li>Electric vehicle permanent-magnet motor drive technology and high-performance control.</li>
+                    <li>Ultra-high-speed linear motion and electromagnetic propulsion systems (Mach-level LIM/LSM).</li>
+                    <li>AI-empowered advanced control and condition monitoring for motors and power electronic converters.</li>
+                    <li>Modeling and control of AC/DC microgrids and grid-forming converters.</li>
+                    <li>Electro-thermal-mechanical modeling and testing of large-capacity lithium-ion and solid-state batteries.</li>
+                    <li>AI-based battery lifetime prediction, safety assessment, and temperature balancing control.</li>
+                    <li>Battery packs thermal management, temperature equalization and fast charging converters.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Education</h2>
+            <div class="two-column">
+                <div>
+                    <ul>
+                        <li><strong>Ph.D., Electrical Engineering</strong>, The University of Hong Kong, 2018–2022<br>
+                            Thesis: Advanced Modeling and Control of Networked DC Microgrid<br>
+                            Supervisors: Chair Prof. Siew-Chong Tan & Chair Prof. S.Y.R. Hui
+                        </li>
+                        <li><strong>M.Eng., Electrical Engineering</strong>, Huazhong University of Science and Technology, 2015–2018<br>
+                            Thesis: Anti-disturbance Control Strategies of PMSM Drive System for Electric Vehicles
+                        </li>
+                        <li><strong>B.Eng., Electrical Engineering and Automation</strong>, Zhengzhou University, 2011–2015<br>
+                            Rank: 2 / 212
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="font-size:18px;margin-top:0;">Employment</h3>
+                    <ul>
+                        <li><strong>2025.07 – present</strong>: Associate Researcher (副研究员, BR-B), Institute of
+                            Electrical Engineering, Chinese Academy of Sciences, Beijing, China.
+                        </li>
+                        <li><strong>2023.08 – 2025.06</strong>: Postdoctoral Research Fellow, Nanyang Technological
+                            University, Singapore (battery modeling, fast charging, grid-forming converters).
+                        </li>
+                        <li><strong>2022.10 – 2023.02</strong>: Distinguished Postdoctoral Fellow, The Hong Kong
+                            Polytechnic University (ocean energy, DC fast charging optimization).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2 class="section-title">Selected Research Projects</h2>
+            <div class="paragraph-block">
+                <ul>
+                    <li><strong>PI – IEE-CAS BR-B Talent Project</strong><br>
+                        AI-assisted disturbance-rejection control for Mach-level double-sided linear induction motor
+                        propulsion systems; including lightweight motor design, AI-aided high-speed drive control, and
+                        experimental verification platform construction.
+                    </li>
+                    <li><strong>PI – Distinguished Postdoctoral Fellowship, PolyU Hong Kong</strong><br>
+                        Carbon concern-based optimal operation of DC fast charging stations using Markov game modeling
+                        and multi-agent deep reinforcement learning.
+                    </li>
+                    <li><strong>Key Researcher – CAS Pioneer Project (B-class)</strong><br>
+                        High-current ultra-high-speed electromagnetic power system design and control; LIM design for
+                        2.5 Mach (~850 m/s) operation and high-acceleration current control strategies.
+                    </li>
+                    <li><strong>Core Member – CAS IEE BR-A Project</strong><br>
+                        Mach-level high-thrust linear induction motor systems for high-speed transportation with
+                        AI-assisted control and HIL platforms.
+                    </li>
+                    <li><strong>Co-PI – Singapore MOE Tier-1 Project</strong><br>
+                        Next-generation BMS based on electrochemical–thermo–mechanical–aging models for all-solid-state
+                        batteries.
+                    </li>
+                    <li><strong>Core Member – Imperial–NTU Collaboration Fund</strong><br>
+                        Extending lifespan of second-life traction batteries using next-generation electric springs for
+                        smart grids.
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- Publications -->
         <section id="publications">
-            <h2 class="section-title">Selected Publications</h2>
+            <h2 class="section-title">Monograph</h2>
             <div class="paragraph-block">
                 <p>
-                    (You can list several representative papers here. Example:)
+                    Y. Jiang, Y. Wang and Y. Yang, <em>Advanced Control Strategies for Distributed Energy Resources in
+                    DC Microgrids – Techniques and Implementation</em>, Springer Nature, in press.
                 </p>
-                <ol>
-                    <li>Your Name, Coauthor, “Title of the Paper,” <em>IEEE Transactions on Power Electronics</em>, vol. XX, no. X, pp. XX–XX, 20XX.</li>
-                    <li>Your Name, Coauthor, “Title of the Paper,” <em>IEEE Transactions on Industrial Electronics</em>, vol. XX, no. X, pp. XX–XX, 20XX.</li>
-                    <li>Your Name, Coauthor, “Title of the Paper,” <em>Energy Conversion and Management</em>, vol. XX, pp. XX–XX, 20XX.</li>
+            </div>
+
+            <h2 class="section-title">Selected Journal Papers (First/Corresponding Author)</h2>
+            <div class="paragraph-block">
+                <p class="note">
+                    Full publication list is available on
+                    <a href="https://scholar.google.com/citations?user=HOUkN4gAAAAJ" target="_blank">Google Scholar</a>.
+                </p>
+                <ol class="pub-list">
+                    <li>Y. Jiang, W. Xu, C. Mu, J. Zhu, and R. Dian, “An improved third-order generalized integral flux observer for sensorless drive of PMSMs,” <em>IEEE Trans. Ind. Electron.</em>, vol. 66, no. 12, pp. 9149–9160, Dec. 2019.</li>
+                    <li>Y. Jiang, Y. Yang, S. C. Tan, and S. Y. R. Hui, “A high-order differentiator based distributed secondary control for DC microgrids against false data injection attacks,” <em>IEEE Trans. Smart Grid</em>, vol. 13, no. 5, pp. 4035–4045, Sept. 2022.</li>
+                    <li>Y. Jiang, Y. Yang, S. C. Tan, and S. Y. R. Hui, “Distribution power loss mitigation of parallel-connected distributed energy resources in low-voltage DC microgrids using a Lagrange multiplier-based adaptive droop control,” <em>IEEE Trans. Power Electron.</em>, vol. 36, no. 8, pp. 9105–9118, Aug. 2021.</li>
+                    <li>Y. Jiang, Y. Yang, S. C. Tan, and S. Y. R. Hui, “Power loss minimization of parallel-connected distributed energy resources in DC microgrids using a distributed gradient algorithm-based hierarchical control,” <em>IEEE Trans. Smart Grid</em>, vol. 13, no. 6, pp. 4538–4550, Nov. 2022.</li>
+                    <li>Y. Jiang and Y. Yang, “A distributed proportional-integral observer-based hierarchical control for AC microgrids under FDI attacks,” <em>IEEE Trans. Ind. Electron.</em>, vol. 71, no. 12, pp. 15780–15792, Dec. 2024.</li>
+                    <li>Y. Jiang, Y. Yang, S. C. Tan, and S. Y. R. Hui, “Distributed sliding mode observer-based secondary control for DC microgrids under cyber-attacks,” <em>IEEE J. Emerg. Sel. Top. Circuits Syst.</em>, vol. 11, no. 1, pp. 144–154, Mar. 2021.</li>
+                    <li>Y. Jiang, N. Lee, X. Deng, and Y. Yang, “A secure-sustainable-fast charging strategy for lithium-ion batteries based on a random forest-enhanced electro-thermal-degradation model,” <em>IEEE Trans. Power Electron.</em>, Early Access, 2025.</li>
+                    <li>Y. Jiang, N. Lee, X. Deng, Y. Yang, and S.C. Tan, “Physical-informed neural network-enhanced model predictive temperature balancing control for Li-ion battery modules,” <em>IEEE Trans. Ind. Electron.</em>, Early Access, 2025.</li>
+                    <li>M. Zhang, Y. Jiang*, W. Xu, K. Liao, Y. Chen, Y. Li, and D. Li, “Maximum Thrust Control for Segmented Long-Primary Double-Sided Linear Induction Machine Based on Current Vector Optimization,” <em>IEEE Trans. Ind. Electron.</em>, Early Access, 2025.</li>
+                    <li>Y. Jiang, H. Xiao, E.K.W. Cheng, Y. Yang, S.C. Tan, and S.Y.R. Hui, “Stabilization of multiple electric springs against false data injection attacks,” <em>IEEE Trans. Ind. Appl.</em>, vol. 61, no. 2, pp. 2696–2708, Mar. 2025.</li>
                 </ol>
             </div>
         </section>
 
-        <!-- Professional Service -->
-        <section id="services">
-            <h2 class="section-title">Professional Service</h2>
+        <!-- Honors -->
+        <section id="honors">
+            <h2 class="section-title">Honors and Awards</h2>
+            <div class="paragraph-block">
+                <ul>
+                    <li>World’s Top 2% Scientists (Electrical & Electronic Engineering), Stanford/Elsevier ranking, 2025.</li>
+                    <li>Best Paper Award, IEEE Transportation Electrification Conference and Expo Asia-Pacific (ITEC-AP), 2025.</li>
+                    <li>Best Oral Paper / Best Presentation Awards, ICPEE 2023 & 2024, PESA 2020.</li>
+                    <li>ESI Highly Cited Paper in <em>IEEE Transactions on Power Electronics</em>, 2025.</li>
+                    <li>Distinguished Postdoctoral Fellow, The Hong Kong Polytechnic University, 2022–2023.</li>
+                    <li>National Scholarship for Graduate Students (twice), Ministry of Education of China.</li>
+                    <li>Multiple First-class Scholarships and Honors during undergraduate and master studies.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Teaching -->
+        <section id="teaching">
+            <h2 class="section-title">Teaching Activities</h2>
+            <div class="paragraph-block">
+                <ul>
+                    <li>EE4523 Power Engineering Design, Nanyang Technological University, 2024.</li>
+                    <li>EE6506 Semiconductor-based Converter in Renewable Energy Systems, NTU, 2024.</li>
+                    <li>ENGG 1310 Electricity and Electronics, The University of Hong Kong, 2019–2022.</li>
+                    <li>EE6008 Collaborative Research and Development Project (Battery testing and modeling), NTU, 2024.</li>
+                    <li>FYP and DIP supervision on lithium-ion batteries, grid-forming converters and AI for power electronics (30+ students).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Service -->
+        <section id="service">
+            <h2 class="section-title">Academic Service</h2>
+            <div class="paragraph-block">
+                <ul>
+                    <li>IEEE Member; Senior Member of China Electrotechnical Society; Member of Chinese Society for Electrical Engineering.</li>
+                    <li>Deputy Secretary-General, Technical Committee on Artificial Intelligence and Electrical Applications, CEC.</li>
+                    <li>Guest Editor of SCI journal <em>Electronics</em>; committee member of ICEIPS 2025 and other conferences.</li>
+                    <li>Reviewer for IEEE TSG, TII, TIE, TPEL, TTE, IEEE/ASME TMECH, TVT, TCYB, JESTPE, TMAGN, JESTIE, CSEE JPES, Energy, IET PE, IET EPA, and many other journals.</li>
+                    <li>Reviewer for international conferences such as IEEE ECCE, APEC, ECCE-Asia, IECON, ICEMS, and ITEC.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
             <div class="paragraph-block">
                 <p>
-                    • Associate Editor / Senior Editor / Guest Editor of journals such as XXXX, YYYY, ZZZZ.<br>
-                    • Member of Technical Program Committees for international conferences including AAAA, BBBB, CCCC.<br>
-                    • Reviewer for more than XX international journals and conferences.
+                    Institute of Electrical Engineering, Chinese Academy of Sciences (IEE-CAS)<br>
+                    No. 6, North Second Alley of Zhongguancun, Haidian District, Beijing, China<br>
+                    Email: <a href="mailto:yjjiang@mail.iee.ac.cn">yjjiang@mail.iee.ac.cn</a><br>
+                    Phone: +86-177 7149 1684
+                </p>
+                <p>
+                    Google Scholar:
+                    <a href="https://scholar.google.com/citations?user=HOUkN4gAAAAJ" target="_blank">
+                        https://scholar.google.com/citations?user=HOUkN4gAAAAJ
+                    </a>
                 </p>
             </div>
         </section>
 
-        <!-- Research Group -->
-        <section id="group">
-            <h2 class="section-title">Research Group</h2>
-            <div class="paragraph-block">
-                <p>
-                    Briefly introduce your group (e.g., number of PhD/MPhil students, main projects, collaborations).
-                </p>
-            </div>
-        </section>
-
-        <!-- Photos -->
-        <section id="photos">
-            <h2 class="section-title">Photos</h2>
-            <div class="paragraph-block">
-                <p>
-                    You can insert group photos or lab photos here, for example:
-                </p>
-                <!-- 示例图片占位：替换为你自己的图片 -->
-                <img src="group_photo.jpg" alt="Research Group Photo" style="max-width:100%; border:1px solid #cccccc;">
-            </div>
-        </section>
+        <footer>
+            Last updated: Nov. 2025. &nbsp;&nbsp;|&nbsp;&nbsp; This page is hosted on
+            <a href="https://yjjiang-eee.github.io">GitHub Pages</a>.
+        </footer>
 
     </main>
 </div>
