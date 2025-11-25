@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prof. Your Name's Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* 基本排版 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Georgia, serif;
+            background-color: #ffffff;
+            color: #222222;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #003399;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 页面整体布局：左侧导航 + 右侧内容 */
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* 左侧导航栏 */
+        .sidebar {
+            width: 190px;
+            padding: 20px 15px;
+            border-right: 1px solid #cccccc;
+            background-color: #f7f7f7;
+            box-sizing: border-box;
+        }
+
+        .sidebar-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .nav-menu li {
+            margin-bottom: 8px;
+        }
+
+        .nav-menu a {
+            font-size: 15px;
+        }
+
+        /* 右侧内容区域 */
+        .content {
+            flex: 1;
+            padding: 25px 40px 40px 40px;
+            box-sizing: border-box;
+        }
+
+        /* 顶部标题 */
+        .main-heading {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 5px;
+        }
+
+        /* Section 标题 */
+        h2.section-title {
+            font-size: 22px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        /* 欢迎区：照片 + 基本信息 */
+        .welcome-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 210px;
+            background-color: #dddddd;
+            border: 1px solid #aaaaaa;
+            margin-right: 25px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .basic-info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .basic-info ul {
+            margin-top: 0;
+        }
+
+        /* 正文段落 */
+        .paragraph-block {
+            max-width: 980px;
+            text-align: justify;
+        }
+
+        /* 小屏幕适配 */
+        @media (max-width: 800px) {
+            .page-wrapper {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #cccccc;
+            }
+            .content {
+                padding: 20px;
+            }
+            .welcome-container {
+                flex-direction: column;
+            }
+            .profile-photo {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <!-- 左侧导航 -->
+    <aside class="sidebar">
+        <div class="sidebar-title">Menu</div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#services">Professional Service</a></li>
+            <li><a href="#group">Research Group</a></li>
+            <li><a href="#photos">Photos</a></li>
+        </ul>
+    </aside>
+
+    <!-- 右侧内容 -->
+    <main class="content">
+        <!-- 首页 / Welcome -->
+        <section id="home">
+            <div class="main-heading">Your Name's Homepage</div>
+
+            <h2 class="section-title">Welcome</h2>
+
+            <div class="welcome-container">
+                <!-- 照片：请将 photo.jpg 换成你的照片文件名 -->
+                <div class="profile-photo">
+                    <img src="photo.jpg" alt="Profile Photo">
+                </div>
+
+                <!-- 右侧基本信息：把下面内容改成你自己的 -->
+                <div class="basic-info">
+                    <ul>
+                        <li><strong>Prof. Your Name (中文名, 职称, 博导)</strong></li>
+                        <li>School / Department, Your University, City, Country.</li>
+                        <li>Office: Room XXX, Building XX, Street, City ZIP, Country.</li>
+                        <li>Telephone: +XX-XXX-XXXXXXX</li>
+                        <li>Email: youremail@university.edu</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="section-title">Personal Information</h2>
+            <div class="paragraph-block">
+                <p>
+                    Dr. Your Name is now a Professor at the Department of XXXX, Your University, City, Country.
+                    He/She received the Ph.D. degree from XXXXX University in 20XX. From 20XX to 20XX, he/she
+                    worked as a Postdoctoral Researcher at YYYYY University, Country. He/She has published more
+                    than XXX refereed papers in international journals and conferences, including IEEE Transactions,
+                    IET journals, and other high-impact venues.
+                </p>
+                <p>
+                    His/Her current research interests include intelligent electric drives, power electronics and
+                    energy storage systems, cyber-physical systems, artificial intelligence for control and
+                    optimization, and their applications in electric vehicles, microgrids, and advanced manufacturing.
+                    He/She serves as an Associate Editor or Editorial Board Member for several international journals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="research">
+            <h2 class="section-title">Research</h2>
+            <div class="paragraph-block">
+                <p>
+                    <!-- 在这里写你的研究方向简介，可以用列表或小标题分块 -->
+                    • Intelligent control of electric drives and power electronic converters.<br>
+                    • AI-assisted modeling, diagnosis, and optimization for energy systems.<br>
+                    • Linear motors, high-speed machines, and advanced propulsion systems.<br>
+                    • Microgrids, energy management, and multi-source energy storage systems.
+                </p>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2 class="section-title">Selected Publications</h2>
+            <div class="paragraph-block">
+                <p>
+                    (You can list several representative papers here. Example:)
+                </p>
+                <ol>
+                    <li>Your Name, Coauthor, “Title of the Paper,” <em>IEEE Transactions on Power Electronics</em>, vol. XX, no. X, pp. XX–XX, 20XX.</li>
+                    <li>Your Name, Coauthor, “Title of the Paper,” <em>IEEE Transactions on Industrial Electronics</em>, vol. XX, no. X, pp. XX–XX, 20XX.</li>
+                    <li>Your Name, Coauthor, “Title of the Paper,” <em>Energy Conversion and Management</em>, vol. XX, pp. XX–XX, 20XX.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Professional Service -->
+        <section id="services">
+            <h2 class="section-title">Professional Service</h2>
+            <div class="paragraph-block">
+                <p>
+                    • Associate Editor / Senior Editor / Guest Editor of journals such as XXXX, YYYY, ZZZZ.<br>
+                    • Member of Technical Program Committees for international conferences including AAAA, BBBB, CCCC.<br>
+                    • Reviewer for more than XX international journals and conferences.
+                </p>
+            </div>
+        </section>
+
+        <!-- Research Group -->
+        <section id="group">
+            <h2 class="section-title">Research Group</h2>
+            <div class="paragraph-block">
+                <p>
+                    Briefly introduce your group (e.g., number of PhD/MPhil students, main projects, collaborations).
+                </p>
+            </div>
+        </section>
+
+        <!-- Photos -->
+        <section id="photos">
+            <h2 class="section-title">Photos</h2>
+            <div class="paragraph-block">
+                <p>
+                    You can insert group photos or lab photos here, for example:
+                </p>
+                <!-- 示例图片占位：替换为你自己的图片 -->
+                <img src="group_photo.jpg" alt="Research Group Photo" style="max-width:100%; border:1px solid #cccccc;">
+            </div>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
